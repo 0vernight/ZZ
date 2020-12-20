@@ -1,4 +1,4 @@
-package Test1;
+package basic;
 
 public class Mike {
 //    lmcnkjcn
