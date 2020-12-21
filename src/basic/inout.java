@@ -1,4 +1,4 @@
-package exam.basic;
+package basic;
 
 import java.io.FileReader;
 import java.io.FileWriter;

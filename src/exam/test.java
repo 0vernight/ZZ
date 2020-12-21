@@ -1,51 +1,13 @@
 package exam;
 
-import java.sql.SQLOutput;
-import java.util.Scanner;
-
 public class test {
 
-    public static void main(String arg[]){
+    public static void main(String[] args) {
+        StringBuffer stringBuffer=new StringBuffer();
+        String s2,s="abc",s1="abc";
+        s2="abc";
+        System.out.println(s==s2);
+        System.out.println(s==s1);
 
-
-        int x,y;
-        x=5>>2;y=x>>>2;
-        Scanner in =new Scanner(System.in);
-        System.out.println("请输入两个数："+y );
-//        int m=in.nextInt();
-//        int n=in.nextInt();
-//        System.out.println("最小公倍数为="+m*n/gbs(m,n));
-
-
-        System.out.println(16<<1);
-        System.out.println(Math.round(11.9));
-//        int a[] = {5,9,3,4,7,10};
-//        ins(a,6);
-//        for (int b:a) {
-//            System.out.println(b);
-//        }
-
-
-    }
-
-   public static int gbs(int a,int b){
-       if(a%b==0)
-           return b;
-       else
-           return gbs( b,(a%b));
-    }
-    void ins(int a[],int n){
-        for (int i=1;i<n;i++){
-            if (a[i]<a[i-1]) {
-                int j=i-1;
-                int x=a[i];
-                a[i]=a[i-1];
-                while(j>=0&&x<a[j]){
-                    a[j+1] = a[j];
-                    j--;
-                }
-                a[j + 1] =x ;
-            }
-        }
     }
 }
